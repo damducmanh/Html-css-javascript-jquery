@@ -1,0 +1,139 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>menu demo</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 1200px;
+	height:2000px;
+}
+#menu{
+	width:900px;
+	height: 40px;
+	background:url(http://cementtilevietnam.com/wp-content/uploads/2016/01/TM-MOP1-1-1-300x300.jpg) repeat-x left top;
+	margin: 10px auto;
+	opacity:0.3;
+	position: fixed;
+}
+#menu ul{
+	width: 900px;
+	height: 40px;
+
+}
+#menu ul li{
+	float: left;
+	padding: 0 15px;
+	line-height: 38px;/* can cho tat ca vao giua*/
+	width: auto;
+	height: 38px;
+	list-style: none;
+}
+#menu ul li:hover{
+	background:red;
+	cursor: pointer;
+}
+#menu ul li a{
+	color: blue;
+	font-size: 16px;
+	font-family: arial;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+</style>
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+		</ul>
+	</div>
+	<div>
+		<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+			<li><a>Home</a></li>
+			<li><a>Loai 1</a></li>
+			<li><a>Loai 2</a></li>
+			<li><a>Loai 3</a></li>
+			<li><a>Loai 4</a></li>
+			<li><a>Loai 5</a></li>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(window).scroll(function(){
+      var height = $(window).scrollTop();
+
+      if(height  > 50) {
+        $("#menu").css("opacity","1");
+      }else{
+        $("#menu").css("opacity","0");
+      }
+    });
+});
+</script>
+</html>

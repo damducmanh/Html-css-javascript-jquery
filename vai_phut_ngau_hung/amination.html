@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+#product{
+	width: 700px;
+	height: 300px;
+	position: relative;
+	margin: auto;
+}
+#product img{}
+#product:hover #la1{
+	opacity: 1;
+	top:40px;
+	left:40px;
+	transition: all ease 0.6s;
+	-webkit-transform:rotate(0deg) translateX(0px);
+}
+#product #la1{
+	opacity: 0;
+	width: 650px;
+	height: 279px;
+	background: #222222;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	transition: all ease 0.6s;
+		-webkit-transform:rotate(50deg) translateY(600px);
+}
+</style>
+<body>
+	<div id="product">
+		<img src="https://blog.bizweb.vn/wp-content/uploads/2014/08/huong-dan-cach-chup-anh-san-pham-dep-14.jpg" >
+		<div id="la1">
+			<img src="http://blog.bizweb.vn/wp-content/uploads/2014/08/cipromo1-650x435.jpg" width="650px" height="279px">
+		</div>
+	</div>
+</body>
+</html>

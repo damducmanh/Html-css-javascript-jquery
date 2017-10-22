@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#main{
+	width:100%;
+	height: 100vh;
+}
+#text{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/img.png);
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 300px;
+	font-size: 170px;
+	transition:all 3s ease-in-out;
+	color: transparent;
+	-webkit-background-clip:text; 
+}
+#main:hover #text{
+	background-size: 80% 80%;
+}
+#bgimg{
+	background-position: center;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/img.png);
+	background-size: 100% 100%;
+	transition: all 3s ease-in-out;
+}
+#main:hover #bgimg{
+	background-size: 150% 150%;
+}
